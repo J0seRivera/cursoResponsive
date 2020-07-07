@@ -245,6 +245,7 @@ celeste = #026fff*/
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 15px;
 }
 
 
@@ -348,7 +349,13 @@ celeste = #026fff*/
 }
 
 /* Desktop first, media query mas grande*/
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1023px){
+  h2{
+    margin: 1.2em 0;
+  }
+  .portfolio{
+    padding: 0;
+  }
   .container{
     padding: 0 1em;
   }
@@ -376,6 +383,10 @@ celeste = #026fff*/
 }
 
 @media screen and (max-width: 767px){
+  h2{
+    font-size: 1.2em;
+    margin: 1em 0;
+  }
   .burguer-button{
     display: block;
   }
@@ -466,6 +477,13 @@ celeste = #026fff*/
 
   
 }
+@media screen and (max-width: 539px){
+  .social-link{
+    width: 40px;
+    height: 40px;
+    background-size: 100%;
+  }
+}
 
 @media screen and (max-width: 480px){
   h1{
@@ -474,7 +492,7 @@ celeste = #026fff*/
 
   .project-details{
     /* width: auto; */
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .event-detail{
@@ -502,9 +520,15 @@ celeste = #026fff*/
 
 }
 
+
+
 @media screen and (max-width: 320px){
   h1{
     font-size: 1.2em;
+  }
+  h2{
+    text-align: center;
+    font-size: 1em;
   }
   .hero{
     padding: 2em 1em;
